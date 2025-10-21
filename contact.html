@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | FoodieFiesta</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+<body class="bg-gray-50">
+    <custom-navbar></custom-navbar>
+
+    <!-- Contact Hero -->
+    <section class="relative py-20 bg-red-500 text-white">
+      <div class="max-w-6xl mx-auto px-4 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-6">Contact Us</h1>
+        <p class="text-xl md:text-2xl max-w-3xl mx-auto">We'd love to hear from you</p>
+      </div>
+      <div class="absolute bottom-0 left-0 right-0 h-16 bg-white transform skew-y-2 origin-bottom-left"></div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="py-16 px-4">
+      <div class="max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <!-- Contact Form -->
+          <div class="bg-white rounded-xl shadow-lg p-8">
+            <h2 class="text-2xl font-bold mb-6">Send Us a Message</h2>
+            <form class="needs-validation" novalidate>
+              <div class="mb-6">
+                <label for="contact-name" class="block text-gray-700 font-medium mb-2">Your Name</label>
+                <input type="text" id="contact-name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent" placeholder="John Doe" required>
+                <div class="invalid-feedback text-red-500 text-sm mt-1">
+                  Please provide your name.
+                </div>
+              </div>
+              
+              <div class="mb-6">
+                <label for="contact-email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                <input type="email" id="contact-email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent" placeholder="you@example.com" required>
+                <div class="invalid-feedback text-red-500 text-sm mt-1">
+                  Please provide a valid email.
+                </div>
+              </div>
+              
+              <div class="mb-6">
+                <label for="contact-subject" class="block text-gray-700 font-medium mb-2">Subject</label>
+                <select id="contact-subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent" required>
+                  <option value="" disabled selected>Select a subject</option>
+                  <option value="order">Order Issue</option>
+                  <option value="delivery">Delivery Problem</option>
+                  <option value="feedback">Feedback</option>
+                  <option value="other">Other</option>
+                </select>
+                <div class="invalid-feedback text-red-500 text-sm mt-1">
+                  Please select a subject.
+                </div>
+              </div>
+              
+              <div class="mb-6">
+                <label for="contact-message" class="block text-gray-700 font-medium mb-2">Message</label>
+                <textarea id="contact-message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent" placeholder="Your message here..." required></textarea>
+                <div class="invalid-feedback text-red-500 text-sm mt-1">
+                  Please provide a message.
+                </div>
+              </div>
+              
+              <button type="submit" class="w-full bg-red-500 hover:bg-red-600 text-white py-3 rounded-lg font-medium transition duration-300">Send Message</button>
+            </form>
+          </div>
+          
+          <!-- Contact Info -->
+          <div>
+            <h2 class="text-2xl font-bold mb-6">Get In Touch</h2>
+            <div class="space-y-6">
+              <div class="flex items-start">
+                <div class="bg-red-100 p-3 rounded-full mr-4">
+                  <i data-feather="map-pin" class="text-red-500"></i>
+                </div>
+                <div>
+                  <h3 class="text-lg font-semibold mb-1">Our Location</h3>
+                  <p class="text-gray-600">123 Food Street, Downtown<br>City, State 12345</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start">
+                <div class="bg-red-100 p-3 rounded-full mr-4">
+                  <i data-feather="phone" class="text-red-500"></i>
+                </div>
+                <div>
+                  <h3 class="text-lg font-semibold mb-1">Phone Numbers</h3>
+                  <p class="text-gray-600">Main: (123) 456-7890<br>Support: (123) 456-7891</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start">
+                <div class="bg-red-100 p-3 rounded-full mr-4">
+                  <i data-feather="mail" class="text-red-500"></i>
+                </div>
+                <div>
+                  <h3 class="text-lg font-semibold mb-1">Email Addresses</h3>
+                  <p class="text-gray-600">General: info@foodiefiesta.com<br>Support: support@foodiefiesta.com</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start">
+                <div class="bg-red-100 p-3 rounded-full mr-4">
+                  <i data-feather="clock" class="text-red-500"></i>
+                </div>
+                <div>
+                  <h3 class="text-lg font-semibold mb-1">Opening Hours</h3>
+                  <p class="text-gray-600">
+                    Monday - Friday: 9AM - 10PM<br>
+                    Saturday - Sunday: 10AM - 11PM
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Social Media -->
+            <div class="mt-10">
+              <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
+              <div class="flex space-x-4">
+                <a href="#" class="bg-gray-200 hover:bg-red-500 hover:text-white text-gray-700 p-3 rounded-full transition duration-300">
+                  <i data-feather="facebook"></i>
+                </a>
+                <a href="#" class="bg-gray-200 hover:bg-red-500 hover:text-white text-gray-700 p-3 rounded-full transition duration-300">
+                  <i data-feather="twitter"></i>
+                </a>
+                <a href="#" class="bg-gray-200 hover:bg-red-500 hover:text-white text-gray-700 p-3 rounded-full transition duration-300">
+                  <i data-feather="instagram"></i>
+                </a>
+                <a href="#" class="bg-gray-200 hover:bg-red-500 hover:text-white text-gray-700 p-3 rounded-full transition duration-300">
+                  <i data-feather="youtube"></i>
+                </a>
+              </div>
+            </div>
+            
+            <!-- Map -->
+            <div class="mt-10">
+              <h3 class="text-lg font-semibold mb-4">Find Us On Map</h3>
+              <div class="rounded-xl overflow-hidden h-64 bg-gray-200">
+                <!-- Map iframe would go here -->
+                <div class="w-full h-full flex items-center justify-center text-gray-500">
+                  <i data-feather="map" class="w-12 h-12"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <custom-footer></custom-footer>
+
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>
+      feather.replace();
+    </script>
+</body>
+</html>

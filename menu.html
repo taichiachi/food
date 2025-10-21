@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu | FoodieFiesta</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+<body class="bg-gray-50">
+    <custom-navbar></custom-navbar>
+
+    <!-- Menu Hero -->
+    <section class="relative py-20 bg-red-500 text-white">
+      <div class="max-w-6xl mx-auto px-4 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-6">Our Menu</h1>
+        <p class="text-xl md:text-2xl max-w-3xl mx-auto">Delicious dishes made with love and the freshest ingredients</p>
+      </div>
+      <div class="absolute bottom-0 left-0 right-0 h-16 bg-white transform skew-y-2 origin-bottom-left"></div>
+    </section>
+
+    <!-- Menu Categories -->
+    <section class="py-12 px-4">
+      <div class="max-w-6xl mx-auto">
+        <div class="flex overflow-x-auto pb-4 mb-8 scrollbar-hidden">
+          <div class="flex space-x-2">
+            <button class="category-btn px-6 py-2 rounded-full bg-red-500 text-white font-medium whitespace-nowrap">All</button>
+            <button class="category-btn px-6 py-2 rounded-full bg-gray-200 hover:bg-gray-300 font-medium whitespace-nowrap">Pizza</button>
+            <button class="category-btn px-6 py-2 rounded-full bg-gray-200 hover:bg-gray-300 font-medium whitespace-nowrap">Burgers</button>
+            <button class="category-btn px-6 py-2 rounded-full bg-gray-200 hover:bg-gray-300 font-medium whitespace-nowrap">Pasta</button>
+            <button class="category-btn px-6 py-2 rounded-full bg-gray-200 hover:bg-gray-300 font-medium whitespace-nowrap">Salads</button>
+            <button class="category-btn px-6 py-2 rounded-full bg-gray-200 hover:bg-gray-300 font-medium whitespace-nowrap">Desserts</button>
+            <button class="category-btn px-6 py-2 rounded-full bg-gray-200 hover:bg-gray-300 font-medium whitespace-nowrap">Drinks</button>
+          </div>
+        </div>
+
+        <!-- Menu Items -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Item 1 -->
+          <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+            <div class="relative">
+              <img src="http://static.photos/food/640x360/5" alt="Margherita Pizza" class="w-full h-48 object-cover">
+              <div class="absolute top-4 left-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-semibold">Popular</div>
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="text-xl font-bold">Margherita Pizza</h3>
+                <span class="text-lg font-bold">$14.99</span>
+              </div>
+              <p class="text-gray-600 mb-4">Classic pizza with tomato sauce, fresh mozzarella, and basil</p>
+              <button class="w-full bg-red-500 hover:bg-red-600 text-white py-2 rounded-lg font-medium transition duration-300">Add to Cart</button>
+            </div>
+          </div>
+          
+          <!-- Item 2 -->
+          <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+            <img src="http://static.photos/food/640x360/6" alt="Spaghetti Carbonara" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="text-xl font-bold">Spaghetti Carbonara</h3>
+                <span class="text-lg font-bold">$12.99</span>
+              </div>
+              <p class="text-gray-600 mb-4">Creamy pasta with pancetta, eggs, and parmesan cheese</p>
+              <button class="w-full bg-red-500 hover:bg-red-600 text-white py-2 rounded-lg font-medium transition duration-300">Add to Cart</button>
+            </div>
+          </div>
+          
+          <!-- Item 3 -->
+          <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+            <div class="relative">
+              <img src="http://static.photos/food/640x360/7" alt="Beef Burger" class="w-full h-48 object-cover">
+              <div class="absolute top-4 left-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-semibold">Best Seller</div>
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="text-xl font-bold">Beef Burger</h3>
+                <span class="text-lg font-bold">$9.99</span>
+              </div>
+              <p class="text-gray-600 mb-4">Juicy beef patty with cheese, lettuce, tomato, and special sauce</p>
+              <button class="w-full bg-red-500 hover:bg-red-600 text-white py-2 rounded-lg font-medium transition duration-300">Add to Cart</button>
+            </div>
+          </div>
+          
+          <!-- Item 4 -->
+          <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+            <img src="http://static.photos/food/640x360/8" alt="Caesar Salad" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="text-xl font-bold">Caesar Salad</h3>
+                <span class="text-lg font-bold">$8.99</span>
+              </div>
+              <p class="text-gray-600 mb-4">Fresh romaine lettuce with parmesan, croutons, and Caesar dressing</p>
+              <button class="w-full bg-red-500 hover:bg-red-600 text-white py-2 rounded-lg font-medium transition duration-300">Add to Cart</button>
+            </div>
+          </div>
+          
+          <!-- Item 5 -->
+          <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+            <img src="http://static.photos/food/640x360/9" alt="Chocolate Lava Cake" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="text-xl font-bold">Chocolate Lava Cake</h3>
+                <span class="text-lg font-bold">$6.99</span>
+              </div>
+              <p class="text-gray-600 mb-4">Warm chocolate cake with a molten center, served with vanilla ice cream</p>
+              <button class="w-full bg-red-500 hover:bg-red-600 text-white py-2 rounded-lg font-medium transition duration-300">Add to Cart</button>
+            </div>
+          </div>
+          
+          <!-- Item 6 -->
+          <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+            <img src="http://static.photos/food/640x360/10" alt="Pepperoni Pizza" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="text-xl font-bold">Pepperoni Pizza</h3>
+                <span class="text-lg font-bold">$15.99</span>
+              </div>
+              <p class="text-gray-600 mb-4">Classic pizza with tomato sauce, mozzarella, and pepperoni</p>
+              <button class="w-full bg-red-500 hover:bg-red-600 text-white py-2 rounded-lg font-medium transition duration-300">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Load More Button -->
+        <div class="text-center mt-12">
+          <button id="load-more" class="bg-gray-200 hover:bg-gray-300 text-gray-800 px-8 py-3 rounded-full font-semibold transition duration-300">Load More</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cart Sidebar (hidden by default) -->
+    <div id="cart-sidebar" class="fixed top-0 right-0 w-full md:w-96 h-full bg-white shadow-xl z-50 transform translate-x-full transition-transform duration-300">
+      <div class="p-6 h-full flex flex-col">
+        <div class="flex justify-between items-center mb-6">
+          <h3 class="text-xl font-bold">Your Order</h3>
+          <button id="close-cart" class="text-gray-500 hover:text-gray-700">
+            <i data-feather="x"></i>
+          </button>
+        </div>
+        
+        <div class="flex-1 overflow-y-auto mb-4">
+          <!-- Cart items will be added here dynamically -->
+          <div class="text-center py-8 text-gray-500" id="empty-cart-message">
+            <i data-feather="shopping-cart" class="w-12 h-12 mx-auto mb-4"></i>
+            <p>Your cart is empty</p>
+          </div>
+        </div>
+        
+        <div class="border-t pt-4">
+          <div class="flex justify-between mb-2">
+            <span>Subtotal:</span>
+            <span class="font-semibold">$0.00</span>
+          </div>
+          <div class="flex justify-between mb-4">
+            <span>Delivery Fee:</span>
+            <span class="font-semibold">$2.99</span>
+          </div>
+          <div class="flex justify-between text-lg font-bold mb-6">
+            <span>Total:</span>
+            <span>$2.99</span>
+          </div>
+          <button class="w-full bg-red-500 hover:bg-red-600 text-white py-3 rounded-lg font-medium transition duration-300">Checkout</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cart Button -->
+    <div class="fixed bottom-6 right-6 z-40">
+      <button id="open-cart" class="bg-red-500 hover:bg-red-600 text-white p-4 rounded-full shadow-lg flex items-center transition duration-300">
+        <i data-feather="shopping-cart"></i>
+        <span class="ml-2 font-medium" id="cart-count">0</span>
+      </button>
+    </div>
+
+    <custom-footer></custom-footer>
+
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>
+      feather.replace();
+      
+      // Simple cart functionality for demo
+      document.addEventListener('DOMContentLoaded', function() {
+        const addToCartButtons = document.querySelectorAll('button:not(#open-cart):not(#close-cart):not(#load-more)');
+        const openCartButton = document.getElementById('open-cart');
+        const closeCartButton = document.getElementById('close-cart');
+        const cartSidebar = document.getElementById('cart-sidebar');
+        const cartCount = document.getElementById('cart-count');
+        const emptyCartMessage = document.getElementById('empty-cart-message');
+        
+        let itemCount = 0;
+        
+        addToCartButtons.forEach(button => {
+          button.addEventListener('click', function() {
+            itemCount++;
+            cartCount.textContent = itemCount;
+            
+            // Remove empty cart message if it's the first item
+            if (itemCount === 1) {
+              emptyCartMessage.classList.add('hidden');
+            }
+          });
+        });
+        
+        openCartButton.addEventListener('click', function() {
+          cartSidebar.classList.remove('translate-x-full');
+        });
+        
+        closeCartButton.addEventListener('click', function() {
+          cartSidebar.classList.add('translate-x-full');
+        });
+        
+        // Category filter buttons
+        const categoryButtons = document.querySelectorAll('.category-btn');
+        categoryButtons.forEach(button => {
+          button.addEventListener('click', function() {
+            // Remove active class from all buttons
+            categoryButtons.forEach(btn => {
+              btn.classList.remove('bg-red-500', 'text-white');
+              btn.classList.add('bg-gray-200', 'hover:bg-gray-300');
+            });
+            
+            // Add active class to clicked button
+            this.classList.remove('bg-gray-200', 'hover:bg-gray-300');
+            this.classList.add('bg-red-500', 'text-white');
+            
+            // In a real app, this would filter the menu items
+          });
+        });
+        
+        // Set first category button as active by default
+        categoryButtons[0].classList.remove('bg-gray-200', 'hover:bg-gray-300');
+        categoryButtons[0].classList.add('bg-red-500', 'text-white');
+      });
+    </script>
+</body>
+</html>
